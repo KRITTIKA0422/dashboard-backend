@@ -39,6 +39,7 @@ app.delete("/students/:id", async function (request, response) {            //ap
     console.log(result);
     result.deletedCount>0?response.send({msg:"Deleted Successfully"}):response.send({msg:"Not Deleted"});
 });
+
 app.post('/mentors',async function (request, response){    //api for posting Mentor data
     const data = request.body;
     console.log(data);
